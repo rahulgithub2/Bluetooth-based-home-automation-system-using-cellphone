@@ -1,0 +1,101 @@
+Program Code :
+
+String voice;
+void setup ()
+Serial.begin (9600); pinMode (13, OUTPUT); pinMode (12, OUTPUT);
+pinMode (11, OUTPUT);
+pinMode (10, OUTPUT);
+pinMode (9, OUTPUT);
+pinMode (8, OUTPUT);
+pinMode (7, OUTPUT);
+pinMode (6, OUTPUT);
+pinMode (5, OUTPUT);
+pinMode (4, OUTPUT);
+pinMode (3, OUTPUT);
+pinMode (2, OUTPUI);
+}
+void loop ()
+while (Serial.available ())
+{
+delay (3);
+char c = Serial. read () ;
+voice+=c;
+if (voice.length () >0)
+{
+Serial.printIn (voice);
+if (voice == "light1 on")
+digitalwrite (13, HIGH);
+else if (voice == "light1 off")
+{
+digitalWrite (13, LOW);
+}
+if (voice == "light2 on")
+{
+digitalWrite (12, HIGH);
+else if (voice == "light2 off")
+{
+digitalWrite (12, LOW);
+11 voice ==
+"light3 on")
+{
+digitalWrite (11, HIGH) ;
+else if (voice ==
+"light3 off")
+{
+digitalWrite (11, LOW);
+"light4 on")
+digitalWrite (10, HIGH);
+else if (voice
+"light4 off")
+digitalWrite (10, LOW);
+if (voice == "light5 on")
+{
+digitalWrite (9, HIGH);
+else if (voice == "light5 off")
+{
+digitalWrite (9, LOW);
+}
+if (voice == "light6 on")
+{
+digitalWrite (8, HIGH);
+else if (voice == "light6 off")
+{
+digitalWrite (8, LOW);
+}
+else if (voice
+24
+== "fan1 on") {
+digitalWrite (7, HIGH);
+else if (voice
+"fan1 off") {
+digitalWrite (6, LOW);
+else if (voice == "fan3 on") {
+digitalWrite (5, HIGH);
+else if (voice == "fan3 off")
+digitalWrite (5, LOW); ]
+else if (voice == "fan4 on")
+digitalWrite (4, HIGH);
+else if (voice == "fan4 off")
+digitalWrite (4, LOW); }
+else if (voice == "fan5 on")
+digitalWrite (3, HIGH);
+else if (voice == "fan5 off")
+digitalWrite (3, LOW);
+e 8e 11 V0108 ==
+"fan6 on") {
+digitalWrite (5, LOW);
+else if (voice == "fan4 on")
+digitalWrite (4, HIGH);
+else if (voice == "fan4 off") {
+digitalWrite (4, LOW); }
+else if (voice == "fan5 on") {
+digitalWrite (3, HIGH); }
+else if (voice == "fan5 off") {
+digitalWrite (3, LOW); }
+else if (voice == "fan6 on") {
+digitalWrite (2, HIGH); 〕
+else if (voice == "fan6 off") {
+digitalWrite (2, LOW); }
+voice
+= “ “ ;
+}
